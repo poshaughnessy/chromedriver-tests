@@ -9,9 +9,9 @@ capabilities = {
 }
 
 try:
-  webdriver.Remote('http://127.0.0.1:9515', capabilities)
+  driver = webdriver.Remote('http://127.0.0.1:9515', capabilities)
   driver.get('https://www.samsung.com/uk/')
-  #driver.quit()
+  driver.quit()
 
   #driver = webdriver.Chrome()  # Optional argument, if not specified will search path.
   #driver.get('https://www.samsung.com/uk/');
